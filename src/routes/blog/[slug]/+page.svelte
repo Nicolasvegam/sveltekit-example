@@ -31,6 +31,7 @@
             bs: string;
         };
     };
+
    
     async function fetchAPI(){
         await fetch(`https://jsonplaceholder.typicode.com/posts/${$page.params.slug}`)
@@ -49,6 +50,7 @@
                 user = json  
         })
     }
+
     fetchAPI();
 </script>
 
